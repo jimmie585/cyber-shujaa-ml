@@ -1,10 +1,10 @@
-# 🍷 Wine Classification using Supervised Machine Learning
+#  Wine Classification using Supervised Machine Learning
 
 This project explores and compares six supervised machine learning classification models using the Wine dataset from scikit-learn. The goal is to build, evaluate, and interpret the performance of different models under similar conditions.
 
 ---
 
-## 🔍 Project Overview
+##  Project Overview
 
 The Wine dataset contains chemical analysis of wines grown in the same region in Italy, derived from three different cultivars. Using this data, we train six classification models and evaluate their performance using accuracy, precision, recall, F1-score, and confusion matrices.
 
@@ -12,7 +12,7 @@ This project demonstrates a complete machine learning workflow from data explora
 
 ---
 
-## 📊 Dataset Description
+##  Dataset Description
 
 - **Source**: `sklearn.datasets.load_wine()`
 - **Samples**: 178
@@ -36,7 +36,7 @@ This project demonstrates a complete machine learning workflow from data explora
 
 ---
 
-## 🤖 Models Used
+##  Models Used
 
 The following classification algorithms were implemented using `scikit-learn`:
 
@@ -49,7 +49,7 @@ The following classification algorithms were implemented using `scikit-learn`:
 
 ---
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 Each model was evaluated on a test set using the following metrics:
 
@@ -61,7 +61,7 @@ All models were trained and tested using the same standardized and stratified sp
 
 ---
 
-## ✅ Results Summary
+##  Results Summary
 
 | Model               | Accuracy |
 |--------------------|----------|
@@ -72,14 +72,14 @@ All models were trained and tested using the same standardized and stratified sp
 | Naive Bayes         | 0.96     |
 | Decision Tree       | 0.94     |
 
-> 🏆 **Best Performing Model:** Random Forest  
+>  **Best Performing Model:** Random Forest  
 > It achieved 100% accuracy and showed consistent precision and recall across all classes.
 
 ---
 
-## 🛠️ Setup Instructions
+## 🛠 Setup Instructions
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/jimmie585/cyber-shujaa-ml.git
-cd wine-classification-ml
+cd cyber-shujaa-ml
