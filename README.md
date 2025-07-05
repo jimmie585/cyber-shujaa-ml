@@ -1,40 +1,85 @@
-# cyber-shujaa-ml
-# Simple Linear Regression Model in Python
+# 🍷 Wine Classification using Supervised Machine Learning
 
-This project demonstrates the implementation of a Simple Linear Regression model using Python. It is part of an assignment for the Cyber Shujaa Program (Data and Artificial Intelligence track).
+This project explores and compares six supervised machine learning classification models using the Wine dataset from scikit-learn. The goal is to build, evaluate, and interpret the performance of different models under similar conditions.
 
-## Project Description
+---
 
-The goal of this project is to predict salaries based on years of experience using a linear regression model. The dataset consists of two variables:
-- `YearsExperience`: Number of years of professional experience
-- `Salary`: Annual salary in USD
+## 🔍 Project Overview
 
-This exercise helps in understanding the core principles of supervised learning, model training, and evaluation using the `scikit-learn` library.
+The Wine dataset contains chemical analysis of wines grown in the same region in Italy, derived from three different cultivars. Using this data, we train six classification models and evaluate their performance using accuracy, precision, recall, F1-score, and confusion matrices.
 
-## Objectives
+This project demonstrates a complete machine learning workflow from data exploration and preprocessing to model training and evaluation.
 
-- Load and explore a structured dataset using Pandas
-- Visualize relationships between features using Matplotlib
-- Train and test a Simple Linear Regression model
-- Evaluate model performance using R² score and regression metrics
-- Visualize predictions and regression line
+---
 
-## Tools and Libraries Used
+## 📊 Dataset Description
 
-- Python 3.x
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- scikit-learn
+- **Source**: `sklearn.datasets.load_wine()`
+- **Samples**: 178
+- **Features**: 13 numeric features (e.g., alcohol, malic acid, color intensity)
+- **Classes**: 3 wine categories (`target`: 0, 1, 2)
 
-## File Structure
+**Features include:**
+- Alcohol  
+- Malic acid  
+- Ash  
+- Alcalinity of ash  
+- Magnesium  
+- Total phenols  
+- Flavanoids  
+- Nonflavanoid phenols  
+- Proanthocyanins  
+- Color intensity  
+- Hue  
+- OD280/OD315 of diluted wines  
+- Proline
 
-- `SIMPLR LINEAR REGRESSION MODEL (1).ipynb`: Jupyter Notebook containing all code, outputs, and visualizations
-- `README.md`: Project overview and documentation
+---
 
-## How to Run
+## 🤖 Models Used
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/simple-linear-regression.git
+The following classification algorithms were implemented using `scikit-learn`:
+
+- **Logistic Regression**
+- **Decision Tree Classifier**
+- **Random Forest Classifier**
+- **K-Nearest Neighbors (KNN)**
+- **Naive Bayes (GaussianNB)**
+- **Support Vector Machine (SVM)**
+
+---
+
+## 📈 Evaluation Metrics
+
+Each model was evaluated on a test set using the following metrics:
+
+- **Accuracy Score**
+- **Precision, Recall, F1-Score**
+- **Confusion Matrix (visualized using Seaborn heatmap)**
+
+All models were trained and tested using the same standardized and stratified split of the dataset (70% train / 30% test).
+
+---
+
+## ✅ Results Summary
+
+| Model               | Accuracy |
+|--------------------|----------|
+| Random Forest       | 1.00     |
+| Logistic Regression | 0.98     |
+| SVM (Linear)        | 0.98     |
+| KNN                 | 0.96     |
+| Naive Bayes         | 0.96     |
+| Decision Tree       | 0.94     |
+
+> 🏆 **Best Performing Model:** Random Forest  
+> It achieved 100% accuracy and showed consistent precision and recall across all classes.
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/jimmie585/cyber-shujaa-ml.git
+cd wine-classification-ml
